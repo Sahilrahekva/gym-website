@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+      
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    /* .logo{
+        color: rgb(12, 11, 11);
+        font-size: 40px;
+        background-color: rgb(252, 248, 21);
+        border-radius: 10px;
+    } */
+
+    .navbar{
+      
+        height: 80px;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+         font-size: 25px;
+        /* background-color: rgb(219, 4, 4); */
+        background-color: white;
+    }
+
+    .navbar ul{
+        display: flex;
+        
+        list-style-type: none;
+        margin: 15px;
+    }
+
+    .navbar ul li{
+        position: relative;
+        padding: 10px 20px;
+    }
+
+    .navbar ul li a{
+        /* color: white; */
+        color: brown;
+        text-decoration: none;
+    }
+
+    .navbar ul li:hover{
+        /* background-color: rgb(71, 5, 30);     */
+        /* color: white; */
+        background-color: rgb(221, 210, 210);
+        color: brown;
+        border-radius: 15px;
+    }
+    .active{
+       /* background-color: rgb(71, 5, 30);    
+        color: white; */
+        background-color: rgb(219, 201, 201);
+        color: brown;
+        border-radius: 15px;
+    }
+
+</style>
+
+    <style>
+        .foot{
+            /* font-size: 25px; */
+            padding-top: 10px;
+            padding-bottom: 10px;
+           text-align: center;
+           background-color: rgb(70, 20, 70);
+           color: white;
+        }
+
+        .foot ul{
+            display: flex;
+            list-style-type: none;
+            margin: 15px;
+            justify-content: center;
+             font-size: 30px; 
+            
+        }
+
+        .foot ul li{
+            padding: 10px 20px;
+        }
+        .foot ul li a{
+            text-decoration: none;
+        }
+        .foot i{
+           align-items: center;
+        }
+        
+
+        .logo img{
+            height: 60px;
+            width: 80px;
+        }
+
+ /* .img{
+            background-image: url(https://i0.wp.com/www.cssscript.com/wp-content/uploads/2018/03/Simple-Location-Picker.png?fit=561%2C421&ssl=1);
+            background-repeat: no-repeat;
+            height: 600px;
+            width:1500px;
+            
+
+       
+        }    */
+
+    </style>
+
+</head>
+<body>
+    
+  <body>
+  
+    <header>
+        
+    <div class="navbar">
+        <!-- <div class="logo">Sahil<span>R</span> </div> -->
+        <div class="logo"><img src="https://c8.alamy.com/comp/2D6RN8K/dumbbell-gym-logo-design-stock-vector-illustration-isolated-on-white-background-2D6RN8K.jpg" alt=""></div>
+        <ul>
+            <li><a href="gym.1.html">HOME</a></li>
+            <li><a href="gym.classes.html">CLASSES</a></li>
+            <li><a href="gym.trainer.html">TRAINERS</a></li>
+            <li><a href="gym.shedule.html">SHEDULE</a></li>
+            <li  class="active"><a href="gym.contect.html">CONTECT</a></li>
+        </ul>
+    </div>
+    </header>
+
+
+    <main>
+          
+        
+        <div class="containr">
+            <div class="row " style="padding: 10%;">
+                <div class="col-md-5">
+                    <h3>Contect Information</h3>
+                    <br>
+                    <p><b>Address: </b> 198 west 21th street, suite5 67, abc..</p>
+                    
+                    <p><b>Phon:</b> 123456789</p>
+                    <p><b>Email:</b>abc@gmail.com</p>
+                    <p><b>website:</b>abc.com</p>
+                </div>
+                <div class="col-md-7">
+                    <div class="row ">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your name" class="form-control">
+                                <br>
+                                <input type="text" placeholder="Subject" class="form-control">
+                                <br>
+                                <input type="text" placeholder="Message" class="form-control">
+                                <br><br><br><br>
+                                <button class="btn btn-danger" onclick="sent()">Send Message</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Email" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="img">
+
+            <h1 class="text-center  my-3">Location</h1>
+            <!-- <img src="https://i0.wp.com/www.cssscript.com/wp-content/uploads/2018/03/Simple-Location-Picker.png?fit=561%2C421&ssl=1" alt="" style="width:1200px; margin-left: 100px; height: 500px;"> -->
+            <img src="https://developers.google.com/static/maps/solutions/images/store-locator/maps.png" alt="" style="width:1200px; margin-left: 100px; height: 500px;" >
+        </div>
+
+    </main>
+
+
+
+
+    <footer style="margin-top: 100px;">
+
+        <div class="foot">
+            <h3 class="text-center" style="font-size: 25px;">Thanks For Visitimg Our Website</h3>
+            <p style="font-size: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni illo suscipit id laboriosam reprehenderit quis inventore eum non eos iste.</p>
+
+            <ul>
+                <li><a href="http://facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="http://twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="http://instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="http://linkdin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+
+        </div>
+
+    </footer>
+
+
+
+    <script>
+        function sent(){
+
+            alert("Your message is sent");
+
+        }
+    </script>
+
+
+
+
+
+
+</body> 
+
+</body>
+</html>
+
+
+
+
+
+
